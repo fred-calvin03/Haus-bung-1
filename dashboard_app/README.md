@@ -1,16 +1,41 @@
-# dashboard_app
+# Hausübung 3 – Deployment einer Flutter-Web-App
 
-A new Flutter project.
+## Persönliche Daten
 
-## Getting Started
+Name: Frederic Calvin Nkengne
 
-This project is a starting point for a Flutter application.
+E-Mail: frederic.calvin.nkengne@mnd.thm.de
 
-A few resources to get you started if this is your first Flutter project:
+Matrikelnummer: 5572810
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Veröffentliche Flutter-App
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+dashboard_app
+
+## Hosting Plattform
+
+Firebase Hosting
+
+## Öffentliche URL
+
+[dashboard-app-calvin.web.app](https://dashboard-app-calvin.web.app)
+
+## Lokaler Start
+
+```bash
+flutter pub get
+flutter run -d chrome
+```
+
+## Deployment
+
+```bash
+flutter clean
+flutter pub get
+flutter build web
+firebase deploy
+```
+
+Die Anwendung wurde als Flutter-Web-App mit Firebase Hosting veröffentlicht.
+
+Der Web-Build wurde mit `flutter build web` erzeugt und anschließend über Firebase Hosting bereitgestellt. Die Anwendung ist über die öffentliche URL erreichbar und kann ohne lokale Entwicklungsumgebung genutzt werden.
